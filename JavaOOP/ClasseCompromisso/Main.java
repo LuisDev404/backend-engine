@@ -1,19 +1,23 @@
 package JavaOOP.ClasseCompromisso;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        Compromisso cp1 = new Compromisso();
-        cp1.data = "25/12/2024";
-        cp1.hora = "10:00";
-        cp1.descricao = "Reunião de Natal";
-        cp1.compromisso();
 
+        Scanner dados = new Scanner(System.in);
+
+        Compromisso cp1 = new Compromisso();
+        
+        cp1.data = dados.nextLine();
+        cp1.hora = dados.nextLine();
+        cp1.descricao = dados.nextLine();
+        
         System.out.println("-----------------------");
 
-        Compromisso cp2 = new Compromisso();
-        cp2.data = "31/12/2024";
-        cp2.hora = "23:59";
-        cp2.descricao = "Festa de Ano Novo";
-        cp2.marcado();
+        cp1.compromisso();
+        cp1.marcado();
+        
+        dados.close();
     }
 }
