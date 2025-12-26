@@ -5,7 +5,7 @@ public class ArithmeticOperators {
         // Os Operadores aritiméticos são:
 
         // Soma (+): que somas dois números 
-        int soma = 10 + 11;
+        long soma = 50000 + 350000;
         System.out.println(soma);
 
         // subtração (-): que faz uma subtração 
@@ -13,11 +13,14 @@ public class ArithmeticOperators {
         System.out.println(sub);
 
         // Divisão (/): que faz uma divisão 
-        int div = 30 / 2;
+        int div = 50000 / 4;
         System.out.println(div);
 
         // Multiplicação (*): que faz uma multiplicação
         int mult = 3 * 15;
         System.out.println(mult);
+
+        long porcentagem = 999 * 20 / 100;
+        System.out.println(porcentagem);
     }
 }

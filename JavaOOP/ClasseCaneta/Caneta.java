@@ -1,3 +1,5 @@
+package JavaOOP.ClasseCaneta;
+
 public class Caneta {
     public String modelo;
     public String cor;
